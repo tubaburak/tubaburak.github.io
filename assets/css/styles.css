@@ -203,7 +203,7 @@ p span {
 
 .inner__left,
 .inner__right {
-  background-color: var(--primary-color);
+  background-color: #b7c6ce;
   border: 8px dashed var(--accent-color);
   width: 96%;
   height: 96%;
@@ -301,38 +301,22 @@ p span {
 /*========== Gallery ==========*/
 .gallery__enter {
   height: 55px;
-  background-color: gray;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--primary-color);
 }
 
 .gallery__enter h1 {
   padding-top: 5px;
   padding-left: 20px;
-  color: var(--secondary-color);
+  margin-right: 40px;
+  color: var(--text-color);
   font-size: var(--h1-font-size);
   text-align: left;
-  float: left;
 }
 
-.gallery__enter h2 {
-  padding-top: 7px;
-  padding-left: 60px;
-  font-size: var(--h2-font-size);
-  text-align: left;
-  float: left;
-}
-
-.date__picker {
-  width: 600px;
-  float: right;
-  margin: 16px;
-}
-
-.start__picker {
-  background-color: green;
-}
-
-.end__picker {
-  background-color: red;
+.gallery__enter h1 span {
+  color: var(--primary-color);
 }
 
 .gallery__contents {
@@ -347,13 +331,79 @@ p span {
   border-radius: 20px;
   box-shadow: 5px 5px;
   background-color: var(--primary-color);
-  width: 750px;
+  width: 40%;
+}
+
+/*========== Date Filter System ==========*/
+
+.dropdown__month__start,
+.dropdown__year__start,
+.dropdown__month__end,
+.dropdown__year__end {
+  width: auto;
+  margin: auto;
+  z-index: 9;
+  margin: 0 4px 0 4px;
+  width: 300px;
+  text-align: center;
+}
+
+.selected__start__month,
+.selected__start__year,
+.selected__end__month,
+.selected__end__year {
+  height: 100%;
+  padding-top: 10px;
+  font-size: var(--h3-font-size);
+  background-color: var(--secondary-color);
+  color: var(--accent-color);
+}
+
+.start__month__picker,
+.start__year__picker,
+.end__month__picker,
+.end__year__picker {
+  background-color: lightblue;
+  height: 0px;
+  margin-top: 10px;
+  overflow: hidden;
+  transition-duration: 0.5s;
+  z-index: 10;
+}
+
+.dropdown__option {
+  width: 100%;
+  font-size: var(--h3-font-size);
+  cursor: pointer;
+}
+
+.dropdown__option:hover {
+  background-color: var(--primary-color);
+}
+
+.selected__start__month:hover .start__month__picker,
+.selected__start__year:hover .start__year__picker,
+.selected__end__month:hover .end__month__picker,
+.selected__end__year:hover .end__year__picker {
+  height: 408px;
+}
+
+.filter__button {
+  margin-left: 5px;
+  width: 200px;
+  font-size: var(--h3-font-size);
+  background-color: var(--secondary-color);
+  border: none;
+}
+
+.filter__button:hover {
+  background-color: var(--accent-color);
 }
 
 /*========== Gallery Images ==========*/
 .gallery__images {
   contain: content;
-  width: 1050px;
+  width: 58%;
   min-height: 540px;
   border-radius: 20px;
   box-shadow: 5px 5px;
@@ -483,9 +533,9 @@ p span {
 .pocket {
   position: absolute;
   top: calc(70% + 75px);
-  left: calc(50% - 525px);
+  left: 0px;
   margin: 0 auto;
-  width: 1050px;
+  width: 100%;
   height: 160px;
   border-radius: 20px 20px 0 0;
   background: var(--pocket-gradient-color);

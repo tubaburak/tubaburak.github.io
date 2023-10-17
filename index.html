@@ -7,8 +7,7 @@
         <!-- <meta property="og:image" content="assets/img/preview.png"> -->
         <meta name="author" content="Burak Karagol">
 
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="assets/img/preview.png" type="image/x-icon">
+        <!-- <link rel="shortcut icon" href="assets/img/preview.png" type="image/x-icon"> -->
 
         <!--=============== REMIXICONS ===============-->
         <script src="https://kit.fontawesome.com/e10aba78d2.js" crossorigin="anonymous"></script>
@@ -60,14 +59,98 @@
                 <!-- Header -->
                 <div class="gallery__enter">
                     <h1>
-                        Filtrelemek için bir tarih aralığı seçin
+                        Başlangıç
                     </h1>
-                    <div class="date__picker end__picker">
-                        End date picker
+                    <div class="dropdown__month__start">
+                        <div class="selected__start__month">
+                            <p id="selected__start__month">
+                                OCAK
+                            </p>
+                            <div class="start__month__picker">
+                                <div class="dropdown__option" onclick="set_start_month(1)"><a>OCAK</a></div>
+                                <div class="dropdown__option" onclick="set_start_month(2)"><a>ŞUBAT</a></div>
+                                <div class="dropdown__option" onclick="set_start_month(3)"><a>MART</a></div>
+                                <div class="dropdown__option" onclick="set_start_month(4)"><a>NİSAN</a></div>
+                                <div class="dropdown__option" onclick="set_start_month(5)"><a>MAYIS</a></div>
+                                <div class="dropdown__option" onclick="set_start_month(6)"><a>HAZİRAN</a></div>
+                                <div class="dropdown__option" onclick="set_start_month(7)"><a>TEMMUZ</a></div>
+                                <div class="dropdown__option" onclick="set_start_month(8)"><a>AĞUSTOS</a></div>
+                                <div class="dropdown__option" onclick="set_start_month(9)"><a>EYLÜL</a></div>
+                                <div class="dropdown__option" onclick="set_start_month(10)"><a>EKİM</a></div>
+                                <div class="dropdown__option" onclick="set_start_month(11)"><a>KASIM</a></div>
+                                <div class="dropdown__option" onclick="set_start_month(12)"><a>ARALIK</a></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="date__picker start__picker">
-                        Start date picker
+                    <div class="dropdown__year__start">
+                        <div class="selected__start__year">
+                            <p id="selected__start__year">
+                                2023
+                            </p>
+                            <div class="start__year__picker">
+                                <div class="dropdown__option" onclick="set_start_year(2023)"><a>2023</a></div>
+                                <div class="dropdown__option" onclick="set_start_year(2024)"><a>2024</a></div>
+                                <div class="dropdown__option" onclick="set_start_year(2025)"><a>2025</a></div>
+                                <div class="dropdown__option" onclick="set_start_year(2026)"><a>2026</a></div>
+                                <div class="dropdown__option" onclick="set_start_year(2027)"><a>2027</a></div>
+                                <div class="dropdown__option" onclick="set_start_year(2028)"><a>2028</a></div>
+                                <div class="dropdown__option" onclick="set_start_year(2029)"><a>2029</a></div>
+                                <div class="dropdown__option" onclick="set_start_year(2030)"><a>2030</a></div>
+                                <div class="dropdown__option" onclick="set_start_year(2031)"><a>2031</a></div>
+                                <div class="dropdown__option" onclick="set_start_year(2032)"><a>2032</a></div>
+                                <div class="dropdown__option" onclick="set_start_year(2033)"><a>2033</a></div>
+                                <div class="dropdown__option" onclick="set_start_year(2034)"><a>2034</a></div>
+                            </div>
+                        </div>
                     </div>
+                    <h1>
+                        Bitiş
+                    </h1>
+                    <div class="dropdown__month__end">
+                        <div class="selected__end__month">
+                            <p id="selected__end__month">
+                                ARALIK
+                            </p>
+                            <div class="end__month__picker">
+                                <div class="dropdown__option" onclick="set_end_month(1)"><a>OCAK</a></div>
+                                <div class="dropdown__option" onclick="set_end_month(2)"><a>ŞUBAT</a></div>
+                                <div class="dropdown__option" onclick="set_end_month(3)"><a>MART</a></div>
+                                <div class="dropdown__option" onclick="set_end_month(4)"><a>NİSAN</a></div>
+                                <div class="dropdown__option" onclick="set_end_month(5)"><a>MAYIS</a></div>
+                                <div class="dropdown__option" onclick="set_end_month(6)"><a>HAZİRAN</a></div>
+                                <div class="dropdown__option" onclick="set_end_month(7)"><a>TEMMUZ</a></div>
+                                <div class="dropdown__option" onclick="set_end_month(8)"><a>AĞUSTOS</a></div>
+                                <div class="dropdown__option" onclick="set_end_month(9)"><a>EYLÜL</a></div>
+                                <div class="dropdown__option" onclick="set_end_month(10)"><a>EKİM</a></div>
+                                <div class="dropdown__option" onclick="set_end_month(11)"><a>KASIM</a></div>
+                                <div class="dropdown__option" onclick="set_end_month(12)"><a>ARALIK</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown__year__end">
+                        <div class="selected__end__year">
+                            <p id="selected__end__year">
+                                2034
+                            </p>
+                            <div class="end__year__picker">
+                                <div class="dropdown__option" onclick="set_end_year(2023)"><a>2023</a></div>
+                                <div class="dropdown__option" onclick="set_end_year(2024)"><a>2024</a></div>
+                                <div class="dropdown__option" onclick="set_end_year(2025)"><a>2025</a></div>
+                                <div class="dropdown__option" onclick="set_end_year(2026)"><a>2026</a></div>
+                                <div class="dropdown__option" onclick="set_end_year(2027)"><a>2027</a></div>
+                                <div class="dropdown__option" onclick="set_end_year(2028)"><a>2028</a></div>
+                                <div class="dropdown__option" onclick="set_end_year(2029)"><a>2029</a></div>
+                                <div class="dropdown__option" onclick="set_end_year(2030)"><a>2030</a></div>
+                                <div class="dropdown__option" onclick="set_end_year(2031)"><a>2031</a></div>
+                                <div class="dropdown__option" onclick="set_end_year(2032)"><a>2032</a></div>
+                                <div class="dropdown__option" onclick="set_end_year(2033)"><a>2033</a></div>
+                                <div class="dropdown__option" onclick="set_end_year(2034)"><a>2034</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="filter__button">
+                        Filtrele
+                    </button>
                 </div>
 
                 <!-- 23.08.2023 -->
