@@ -59,7 +59,7 @@
   /*========== Images ==========*/
   /*Side Images*/
   --side-idle-x: 175px;
-  --side-idle-y: 20px;
+  --side-idle-y: -60px;
   /*========== Horizontal ==========*/
   --side-hover-hx: 200px;
   --side-hover-hy: 30px;
@@ -156,20 +156,20 @@
     /*========== Images ==========*/
     /*Side Images*/
     --side-idle-x: 225px;
-    --side-idle-y: 20px;
+    --side-idle-y: -60px;
     /*========== Horizontal ==========*/
     --side-hover-hx: 300px;
-    --side-hover-hy: 30px;
+    --side-hover-hy: 80px;
     --side-onhover-hx: 300px;
     --side-onhover-hy: 100px;
     /*========== Vertical ==========*/
     --side-hover-vx: 250px;
-    --side-hover-vy: 30px;
+    --side-hover-vy: 80px;
     --side-onhover-vx: 300px;
     --side-onhover-vy: 150px;
     /*========== Middle Image ==========*/
     --middle-hover-x: 0px;
-    --middle-hover-y: 50px;
+    --middle-hover-y: 100px;
     /*========== Horizontal ==========*/
     --middle-onhover-hx: 0px;
     --middle-onhover-hy: 100px;
@@ -633,19 +633,19 @@ p span {
 }
 
 .tilt-l {
-  transform: translate(calc(-50% - var(--side-idle-x)), calc(-50% + var(--side-idle-y))) rotate(var(--idle-negative-angle));
+  transform: translate(calc(-50% - var(--side-idle-x)), calc(-50% + var(--side-idle-y) + 20px)) rotate(var(--idle-negative-angle));
   z-index: var(--left-img);
   transition: transform 0.5s;
 }
 
 .tilt-m {
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, calc(-50% + var(--side-idle-y)));
   z-index: var(--middle-img);
   transition: transform 0.5s;
 }
 
 .tilt-r {
-  transform: translate(calc(-50% + var(--side-idle-x)), calc(-50% + var(--side-idle-y))) rotate(var(--idle-positive-angle));
+  transform: translate(calc(-50% + var(--side-idle-x)), calc(-50% + var(--side-idle-y) + 20px)) rotate(var(--idle-positive-angle));
   z-index: var(--right-img);
   transition: transform 0.5s;
 }
