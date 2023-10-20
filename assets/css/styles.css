@@ -19,10 +19,10 @@
   /*========== Font and typography ==========*/
   --body-font: 'Signika Negative', sans-serif;
   --title-font: 'Signika Negative', sans-serif;
-  --biggest-font-size: 2.5rem;
-  --h1-font-size: 2.15rem;
-  --h2-font-size: 2rem;
-  --h3-font-size: 1.75rem;
+  --biggest-font-size: 2.2rem;
+  --h1-font-size: 2rem;
+  --h2-font-size: 1.75rem;
+  --h3-font-size: 1.5rem;
   --h4-font-size: 1rem;
   --normal-font-size: .938rem;
   --small-font-size: .813rem;
@@ -58,17 +58,17 @@
   --short-corner: 300px;
   /*========== Images ==========*/
   /*Side Images*/
-  --side-idle-x: 225px;
+  --side-idle-x: 175px;
   --side-idle-y: 20px;
   /*========== Horizontal ==========*/
-  --side-hover-hx: 300px;
+  --side-hover-hx: 200px;
   --side-hover-hy: 30px;
-  --side-onhover-hx: 300px;
+  --side-onhover-hx: 200px;
   --side-onhover-hy: 100px;
   /*========== Vertical ==========*/
-  --side-hover-vx: 250px;
+  --side-hover-vx: 200px;
   --side-hover-vy: 30px;
-  --side-onhover-vx: 300px;
+  --side-onhover-vx: 250px;
   --side-onhover-vy: 150px;
   /*========== Middle Image ==========*/
   --middle-hover-x: 0px;
@@ -84,6 +84,116 @@
   --idle-negative-angle: -5deg;
   --onhover-positive-angle: 10deg;
   --onhover-negative-angle: -10deg;
+
+  /*========== General Variables ==========*/
+  --home-middle-font-size: 4rem;
+  --home-header-font-size: 2.75rem;
+  --home-image-horizontal: 230px;
+  --home-image-horizontal-neg: -230px;
+  --home-image-vertical: 250px;
+  --home-image-vertical-neg: -250px;
+  --home-image-scale: 0.7;
+  --home-header-margin-top: 450px;
+  --selected-date-picker-height: 300px;
+  --home-description-size: 1.25rem;
+}
+
+@media screen and (min-width: 1600px) {
+  :root {
+    --header-height: 3.5rem;
+  
+    /*========== Colors ==========*/
+    /*https://www.realtimecolors.com/?colors=0c1418-d2ecf9-b9a2b2-d0d8dc-4b7c91&fonts=Concert%20One-Concert%20One*/
+    --primary-color: #b9a2b2;
+    --secondary-color: #d0d8dc;
+    --accent-color: #4b7c91;
+    --text-color: #170d1c;
+    --background-color: #d2ecf9;
+    
+    /*========== Gradients ==========*/
+    --pocket-gradient-color: linear-gradient(to bottom, var(--primary-color), var(--secondary-color) 70%);
+  
+    /*========== Font and typography ==========*/
+    --body-font: 'Signika Negative', sans-serif;
+    --title-font: 'Signika Negative', sans-serif;
+    --biggest-font-size: 2.5rem;
+    --h1-font-size: 2.15rem;
+    --h2-font-size: 2rem;
+    --h3-font-size: 1.75rem;
+    --h4-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    --tiny-font-size: .625rem;
+  
+    /*========== Font weight ==========*/
+    --font-semi-bold: 600;
+    --font-medium: 500;
+    --font-thin: 400;
+  
+    /*========== z index ==========*/
+    --right-img: 2;
+    --left-img: 3;
+    --middle-img: 4;
+    --pocket: 5;
+    --onhover: 6;
+  
+    /*========== Blob variables ==========*/
+    --inner-top: 0%;
+    --inner-bottom: 0%;
+    --outer-top: 150%;
+    --outer-bottom: 150%;
+  
+    /*========== Image Gallery Variables ==========*/
+    /*
+    hover = when hovered any of the cards
+    onhover = when hovered on the active card
+    */
+    
+    /*========== Image Sizes ==========*/
+    --long-corner: 400px;
+    --short-corner: 300px;
+    /*========== Images ==========*/
+    /*Side Images*/
+    --side-idle-x: 225px;
+    --side-idle-y: 20px;
+    /*========== Horizontal ==========*/
+    --side-hover-hx: 300px;
+    --side-hover-hy: 30px;
+    --side-onhover-hx: 300px;
+    --side-onhover-hy: 100px;
+    /*========== Vertical ==========*/
+    --side-hover-vx: 250px;
+    --side-hover-vy: 30px;
+    --side-onhover-vx: 300px;
+    --side-onhover-vy: 150px;
+    /*========== Middle Image ==========*/
+    --middle-hover-x: 0px;
+    --middle-hover-y: 50px;
+    /*========== Horizontal ==========*/
+    --middle-onhover-hx: 0px;
+    --middle-onhover-hy: 100px;
+    /*========== Vertical ==========*/
+    --middle-onhover-vx: 0px;
+    --middle-onhover-vy: 150px;
+    /*========== Angle ==========*/
+    --idle-positive-angle: 5deg;
+    --idle-negative-angle: -5deg;
+    --onhover-positive-angle: 10deg;
+    --onhover-negative-angle: -10deg;
+  
+    /*========== General Variables ==========*/
+    --home-middle-font-size: 5.5rem;
+    --home-header-font-size: 3rem;
+    --home-image-horizontal: 170px;
+    --home-image-horizontal-neg: -170px;
+    --home-image-vertical: 150px;
+    --home-image-vertical-neg: -150px;
+    --home-image-scale: 0.7;
+    --home-header-margin-top: 580px;
+    --selected-date-picker-height: 408px;
+    --home-description-size: 1.75rem;
+  }
 }
 
 /*=============== BASE ===============*/
@@ -160,6 +270,7 @@ p span {
   padding-bottom: 0.2rem;
   padding-left: 50px;
   padding-right: 50px;
+  font-weight: 800;
 }
 
 .section__description {
@@ -168,6 +279,7 @@ p span {
   margin-bottom: 1.5rem;
   padding-left: 50px;
   padding-right: 50px;
+  font-weight: 700;
 }
 
 .left {
@@ -187,7 +299,7 @@ p span {
   background-size: 360px;
   height: 100vh;
   background-color: var(--accent-color);
-  padding: 50px;
+  padding: 40px;
 }
 
 .home__blob {
@@ -225,14 +337,14 @@ p span {
 
 .inner__left img {
   float: right;
-  transform: translate(170px, -150px) scale(0.7);
+  transform: translate(var(--home-image-horizontal), var(--home-image-vertical-neg)) scale(var(--home-image-scale));
 }
 
 .home__middle {
   width: 5vw;
   background-color: var(--secondary-color);
   border-radius: 0px;
-  font-size: 5.5rem;
+  font-size: var(--home-middle-font-size);
   text-align: center;
   grid-area: middle;
   overflow: hidden;
@@ -245,17 +357,18 @@ p span {
 }
 
 .home__header {
-  font-size: 5rem;
+  font-size: var(--home-middle-font-size);
   text-align: center;
   text-wrap: nowrap;
-  margin-top: 580px;
+  margin-top: var(--home-header-margin-top);
   transform: rotate(-90deg);
   transition-duration: 1.5s;
   transition-delay: 1s;
+  font-weight: 800;
 }
 
 .home__middle:hover .home__header {
-  font-size: 3rem;
+  font-size: var(--home-header-font-size);
   margin-top: 40px;
   transform: rotate(0deg);
 }
@@ -273,7 +386,7 @@ p span {
 }
 
 .home__title {
-  font-size: var(--h3-font-size);
+  font-size: var(--home-description-size);
   padding: 40px;
   text-align: left;
   text-indent: 20px;
@@ -295,7 +408,7 @@ p span {
 
 .inner__right img {
   float: left;
-  transform: translate(-170px, -150px) scale(0.7);
+  transform: translate(var(--home-image-horizontal-neg), var(--home-image-vertical-neg)) scale(var(--home-image-scale));
 }
 
 /*========== Gallery ==========*/
@@ -313,6 +426,7 @@ p span {
   color: var(--text-color);
   font-size: var(--h1-font-size);
   text-align: left;
+  font-weight: 600;
 }
 
 .gallery__enter h1 span {
@@ -332,6 +446,7 @@ p span {
   box-shadow: 5px 5px;
   background-color: var(--primary-color);
   width: 40%;
+  font-weight: 400;
 }
 
 /*========== Date Filter System ==========*/
@@ -346,6 +461,7 @@ p span {
   margin: 0 4px 0 4px;
   width: 300px;
   text-align: center;
+  font-weight: 600;
 }
 
 .selected__start__month,
@@ -355,6 +471,7 @@ p span {
   height: 100%;
   padding-top: 10px;
   font-size: var(--h3-font-size);
+  font-weight: 800;
   background-color: var(--secondary-color);
   color: var(--accent-color);
 }
@@ -385,18 +502,21 @@ p span {
 .selected__start__year:hover .start__year__picker,
 .selected__end__month:hover .end__month__picker,
 .selected__end__year:hover .end__year__picker {
-  height: 408px;
+  height: var(--selected-date-picker-height);
 }
 
-.filter__button {
-  margin-left: 5px;
-  width: 200px;
+.filter__button,
+.clear__button {
+  margin-left: 8px;
+  width: 150px;
   font-size: var(--h3-font-size);
   background-color: var(--secondary-color);
   border: none;
+  font-weight: 600;
 }
 
-.filter__button:hover {
+.filter__button:hover,
+.clear__button:hover {
   background-color: var(--accent-color);
 }
 
@@ -549,6 +669,7 @@ p span {
   text-align: center;
   background-color: var(--accent-color);
   height: 200px;
+  font-weight: 100;
 }
 
 /*========== SCROLLBAR ==========*/
