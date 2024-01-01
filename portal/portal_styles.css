@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Autour+One&family=Concert+One&family=Dancing+Script&family=Lobster&family=Pacifico&family=Secular+One&family=Signika+Negative&family=Tilt+Neon&display=swap');
+/*=============== VARIABLES CSS ===============*/
+
+:root {
+    --header-height: 3.5rem;
+
+    /*========== Colors ==========*/
+    /*https://www.realtimecolors.com/?colors=0c1418-d2ecf9-b9a2b2-d0d8dc-4b7c91&fonts=Concert%20One-Concert%20One*/
+    --primary-color: #b9a2b2;
+    --secondary-color: #d0d8dc;
+    --accent-color: #4b7c91;
+    --text-color: #170d1c;
+    --background-color: #d2ecf9;
+
+    /*========== Gradients ==========*/
+    --pocket-gradient-color: linear-gradient(to bottom, var(--primary-color), var(--secondary-color) 70%);
+
+    /*========== Font and typography ==========*/
+    --body-font: 'Signika Negative', sans-serif;
+    --title-font: 'Signika Negative', sans-serif;
+    --biggest-font-size: 2.2rem;
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.75rem;
+    --h3-font-size: 1.5rem;
+    --h4-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    --tiny-font-size: .625rem;
+
+    /*========== Font weight ==========*/
+    --font-semi-bold: 600;
+    --font-medium: 500;
+    --font-thin: 400;
+
+    /*========== z index ==========*/
+    --right-img: 2;
+    --left-img: 3;
+    --middle-img: 4;
+    --pocket: 5;
+    --onhover: 6;
+}
+
+body {
+    background-color: var(--background-color);
+}
